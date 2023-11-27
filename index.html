@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/sockjs.min.js"></script>
+    <script src="./js/stomp.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Square</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        .player {
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+        .enemy {
+            position: absolute;
+            background-color: red;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="popup" class="hidden">
+    <div class="popupContent">
+        <h2>Digite seu nome:</h2>
+        <input type="text" id="usernameInput">
+        <button onclick="openChat()">Entrar no Chat</button>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
